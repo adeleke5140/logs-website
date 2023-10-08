@@ -6,7 +6,9 @@ import Layout from "../layouts/Layout.astro";
   <main
     class="flex flex-col gap-6 justify-center items-center h-full grow lg:grid grid-cols-2 lg:gap-10"
   >
-    <div class="text-primary lg:mx-auto lg:flex lg:flex-col lg:gap-3 lg:grow">
+    <div
+      class="text-primary lg:mx-auto lg:flex lg:flex-col lg:gap-3 lg:grow lg:w-3/5"
+    >
       <p class="font-medium text-center lg:text-left">
         All your call logs in one place 🎉
       </p>
@@ -33,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
         />
         <button
           type="submit"
-          class="text-center text-xl mx-auto block text-tertiary bg-secondary px-24 py-6 font-semibold rounded-[4rem]"
+          class="text-center lg:w-full hover:bg-muted hover:scale-[0.985] transition-button ease-in duration-200 text-xl mx-auto block text-tertiary bg-secondary px-24 py-6 font-semibold rounded-[4rem]"
         >
           Join Waitlist</button
         >
