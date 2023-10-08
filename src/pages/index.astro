@@ -3,13 +3,21 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Logs">
-  <main class="flex flex-col gap-6 justify-center items-center h-full grow">
-    <div class="text-primary">
-      <p class="font-medium text-center">All your call logs in one place 🎉</p>
-      <h1 class="-mt-2 font-extrabold text-[4rem] text-center">Logs</h1>
+  <main
+    class="flex flex-col gap-6 justify-center items-center h-full grow lg:grid grid-cols-2 lg:gap-10"
+  >
+    <div class="text-primary lg:mx-auto lg:flex lg:flex-col lg:gap-3 lg:grow">
+      <p class="font-medium text-center lg:text-left">
+        All your call logs in one place 🎉
+      </p>
+      <h1
+        class="-mt-2 font-extrabold text-[4rem] lg:text-7xl text-center lg:text-left"
+      >
+        Logs
+      </h1>
       <a
         href="/about"
-        class="text-xs underline w-fit font-semibold text-center block mx-auto"
+        class="text-xs lg:text-base underline w-fit font-semibold text-center lg:text-left block mx-auto lg:mx-0"
         >what is logs?
       </a>
 
@@ -65,6 +73,16 @@ import Layout from "../layouts/Layout.astro";
           </svg></span
         >
       </form>
+    </div>
+
+    <div class="flex-col items-center gap-4 hidden lg:flex">
+      <p class="text-lg font-medium">
+        Say Goodbye to the mediocre call history Apple provides.
+      </p>
+      <img
+        src="/public/assets/image.svg"
+        alt="the iphone contact app showing call history"
+      />
     </div>
   </main>
 </Layout>
