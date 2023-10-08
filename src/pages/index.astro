@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import contactPreview from "../assets/image.svg";
 ---
 
 <Layout title="Logs">
@@ -81,8 +83,8 @@ import Layout from "../layouts/Layout.astro";
       <p class="text-lg font-medium">
         Say Goodbye to the mediocre call history Apple provides.
       </p>
-      <img
-        src="/public/assets/image.svg"
+      <Image
+        src={contactPreview}
         alt="the iphone contact app showing call history"
       />
     </div>
