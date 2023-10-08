@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About Logs">
+  <div class="space-y-2 pt-[10%] grow mb-8 lg:mx-auto lg:max-w-2xl">
+    <h1 class="font-bold text-3xl text-primary">What is Logs?📚</h1>
+
+    <div class="space-y-4 text-tertiary">
+      <p>Logs provides with you with a proper call log for your IOS device.</p>
+      <p>
+        I moved over to <b>IOS</b> 2years ago and the experience has been decent
+        so far. Sadly, there was one feature that I never liked.
+      </p>
+      <p>
+        <b>The lack of a proper call log.</b> On Android, you can see the total
+        number of times a person has called you. Say you wanted to rememeber <i
+          >a special call on the 30th of June 2023
+        </i> and wanted to know how long it was, you could check it.
+      </p>
+
+      <p>Logs is the solution for that lack on IOS.</p>
+
+      <form action="" class="w-full space-y-6">
+        <label for="email" class="font-bold text-tertiary"
+          >Join the Waitlist:</label
+        >
+        <input
+          id="email"
+          type="email"
+          required
+          class="w-full rounded-lg py-4 px-4 font-sans focus:outline-none focus:ring focus:ring-primary"
+          placeholder="ken@ken.com"
+        />
+        <button
+          type="submit"
+          class="text-center text-lg block text-tertiary bg-secondary px-10 py-4 font-semibold rounded-[4rem]"
+        >
+          Join Waitlist</button
+        >
+      </form>
+    </div>
+  </div>
+</Layout>

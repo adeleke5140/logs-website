@@ -1,7 +1,92 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import contactPreview from "../assets/image.svg";
 ---
 
 <Layout title="Logs">
-  <p>Logs</p>
+  <main
+    class="flex flex-col gap-6 justify-center items-center h-full grow lg:grid grid-cols-2 lg:gap-10"
+  >
+    <div
+      class="text-primary lg:mx-auto lg:flex lg:flex-col lg:gap-3 lg:grow lg:w-3/5"
+    >
+      <p class="font-medium text-center lg:text-left">
+        All your call logs in one place 🎉
+      </p>
+      <h1
+        class="-mt-2 font-extrabold text-[4rem] lg:text-7xl text-center lg:text-left"
+      >
+        Logs
+      </h1>
+      <a
+        href="/about"
+        class="text-xs lg:text-base underline w-fit font-semibold text-center lg:text-left block mx-auto lg:mx-0"
+        >what is logs?
+      </a>
+
+      <form action="" class="w-full space-y-6">
+        <label for="
+      email" class="sr-only"> Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          class="w-full rounded-lg py-4 px-4 font-sans focus:outline-none focus:ring focus:ring-primary"
+          placeholder="ken@ken.com"
+        />
+        <button
+          type="submit"
+          class="text-center lg:w-full hover:bg-muted hover:scale-[0.985] transition-button ease-in duration-200 text-xl mx-auto block text-tertiary bg-secondary px-24 py-6 font-semibold rounded-[4rem]"
+        >
+          Join Waitlist</button
+        >
+        <span
+          class="text-primary font-medium text-center mt-4 flex items-center justify-center gap-2"
+          >Coming soon to IOS<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_109_11)">
+              <path
+                d="M5.256 0H18.744C21.6469 0 24 2.35312 24 5.256V18.744C24 21.6469 21.6469 24 18.744 24H5.256C2.35312 24 0 21.6469 0 18.744V5.256C0 2.35312 2.35312 0 5.256 0Z"
+                fill="url(#paint0_linear_109_11)"></path>
+              <path
+                d="M7.69145 17.4197L7.6937 17.4204L6.87311 18.8417C6.57358 19.3605 5.9102 19.5383 5.39139 19.2387C4.87267 18.9393 4.69483 18.2759 4.99436 17.757L5.59886 16.71L5.65689 16.6096C5.76048 16.4606 6.01614 16.2037 6.52754 16.2519C6.52754 16.2519 7.73101 16.3825 7.81811 17.008C7.81811 17.008 7.82992 17.2139 7.69145 17.4198V17.4197ZM19.3299 13.7897H16.771C16.5968 13.778 16.5207 13.7157 16.4907 13.6795L16.4889 13.6763L13.7498 8.93194L13.7462 8.93428L13.5819 8.69878C13.3127 8.28703 12.8852 9.34003 12.8852 9.34003C12.3747 10.5134 12.9577 11.8474 13.1608 12.2506L16.9654 18.8403C17.2648 19.359 17.9282 19.5368 18.4471 19.2372C18.9658 18.9377 19.1437 18.2743 18.8441 17.7555L17.8928 16.1077C17.8743 16.0678 17.8422 15.9594 18.0373 15.959H19.3299C19.9289 15.959 20.4145 15.4733 20.4145 14.8743C20.4145 14.2752 19.9289 13.7897 19.3299 13.7897ZM14.3598 15.2642C14.3598 15.2642 14.4964 15.959 13.9679 15.959H4.50864C3.90958 15.959 3.42395 15.4733 3.42395 14.8743C3.42395 14.2752 3.90958 13.7896 4.50864 13.7896H6.94051C7.33314 13.7669 7.42614 13.5402 7.42614 13.5402L7.42839 13.5413L10.6028 8.04309L10.6018 8.04291C10.6597 7.93669 10.6115 7.83628 10.6031 7.82044L9.55473 6.00459C9.2552 5.48588 9.43295 4.82241 9.95176 4.52297C10.4706 4.22344 11.1339 4.40109 11.4335 4.91991L11.9197 5.76206L12.405 4.92141C12.7045 4.40269 13.3679 4.22484 13.8867 4.52447C14.4055 4.824 14.5833 5.48728 14.2838 6.00609L9.86645 13.657C9.84714 13.7036 9.84123 13.7768 9.98495 13.7896H12.6253L12.6259 13.8154C12.6259 13.8154 14.1519 13.8391 14.3598 15.2642Z"
+                fill="white"></path>
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_109_11"
+                x1="12"
+                y1="0"
+                x2="12"
+                y2="24"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#17C9FB"></stop>
+                <stop offset="1" stop-color="#1A74E8"></stop>
+              </linearGradient>
+              <clipPath id="clip0_109_11">
+                <rect width="24" height="24" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg></span
+        >
+      </form>
+    </div>
+
+    <div class="flex-col items-center gap-4 hidden lg:flex">
+      <p class="text-lg font-medium">
+        Say Goodbye to the mediocre call history Apple provides.
+      </p>
+      <Image
+        src={contactPreview}
+        alt="the iphone contact app showing call history"
+      />
+    </div>
+  </main>
 </Layout>
