@@ -12,6 +12,10 @@ module.exports = {
         secondary: "#AB9FF2",
         tertiary: "#1C1C1C",
         neutral: "#F5F2FF",
+        muted: "#e2dffe",
+      },
+      transitionProperty: {
+        button: "transform, background-color",
       },
     },
   },
